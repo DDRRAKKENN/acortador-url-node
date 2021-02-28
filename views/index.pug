@@ -1,0 +1,7 @@
+extends master
+block content 
+    form(action="/" method="POST" id="agregar-url")
+        legend Añade tu URL en el cuadro ->
+            input(type="url" name="urlOriginal" id="urlOriginal" placeholder="URL AQUI" required)
+        .campo.enviar
+            input(type="submit" class="btn" value="Acortar")
